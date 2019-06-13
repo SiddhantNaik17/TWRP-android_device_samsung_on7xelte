@@ -1,4 +1,4 @@
-## TWRP device tree for Samsung Galaxy M20 (m20lte)
+## TWRP device tree for Samsung Galaxy J7 Prime (on7xelte)
 
  Copyright (C) 2019
 

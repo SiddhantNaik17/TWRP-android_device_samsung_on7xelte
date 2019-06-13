@@ -1,8 +1,8 @@
 # Platform
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
-TARGET_SOC := exynos7904
-TARGET_BOOTLOADER_BOARD_NAME := universal7885
+TARGET_SOC := exynos7870
+TARGET_BOOTLOADER_BOARD_NAME := universal7870
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
@@ -23,17 +23,17 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := m20lte_03_defconfig
+TARGET_KERNEL_CONFIG := on7xelteswa_00_defconfig
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/samsung/universal7904
+TARGET_KERNEL_SOURCE := kernel/samsung/universal7870
 
 # Image
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/m20lte/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/on7xelte/mkbootimg.mk
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SRPRK13A001RU
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SRPPE16A000KU
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # File systems
@@ -59,7 +59,7 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
 
 # Include
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/m20lte/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/on7xelte/include
 
 # SELinux Policies
-BOARD_SEPOLICY_DIRS := device/samsung/m20lte/sepolicy
+BOARD_SEPOLICY_DIRS := device/samsung/on7xelte/sepolicy

@@ -1,1 +1,1 @@
-add_lunch_combo omni_m20lte-eng
+add_lunch_combo omni_on7xelte-eng
